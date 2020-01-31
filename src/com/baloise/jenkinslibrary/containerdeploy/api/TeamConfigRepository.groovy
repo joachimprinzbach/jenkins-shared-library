@@ -1,6 +1,7 @@
 package com.baloise.jenkinslibrary.containerdeploy.api
 
-def runSync(webhookChangeEventPayload) {
+def runSync(eventString) {
+    def webhookChangeEventPayload = readJSON text: eventString
     def organisation = webhookChangeEventPayload["repository"]["project"]["key"]
     def repository = webhookChangeEventPayload["repository"]["slug"]
     def refId = webhookChangeEventPayload["changes"][0]["refId"]
