@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <groovy.cps.version>1.30</groovy.cps.version>
-        <groovy.version>2.5.9</groovy.version>
+        <groovy.version>2.5.14</groovy.version>
     </properties>
 
     <dependencies>
